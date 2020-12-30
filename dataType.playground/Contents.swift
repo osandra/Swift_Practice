@@ -88,6 +88,10 @@ var dicExample = [
     "noy":"marketer",
 ]
 dicExample["Jane"] = "professor"
+print(dicExample["Jane"]) // Optional("professor"). 딕셔너리는 옵셔널 타입을 반환함.
+print(dicExample["Jane"]!) //professor
+print(dicExample["new"]) //해당 키로 등록된 값이 없으면 nil 반환.
+
 print(dicExample) //["Jane": "professor", "mika": "developer", "noy": "marketer"]
 dump(dicExample) //more detail info. 3key/value pairs + each info
 
